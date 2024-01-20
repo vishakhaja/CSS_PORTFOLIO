@@ -3,12 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS PORTFOLIO1</title>
     <style>
-        
+    /* Write your code here */
+    /* Each square should be 100px by 100px */
+    /* My colours for white: #f0d9b5, black: #b58863 */
+    body{
+        background-color: pink ;
+    }
+    footer{
+      text-align: right;
+    }
+    .item{
+      display:flex;
+      justify-content : center;
+      align-content : center;
+      justify-content: space-around;
+    }
+    .head{
+    color:blueviolet;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap:20px;
+    }
+    .project1{
+        grid-column-start: 2;
+        grid-column:span 2;
+        grid-row:1/2;
+        height:auto;
+        background-color: bisque ;
+    }
+    .project2{
+      grid-column:span 2;
+      height:auto;
+      background-color: bisque ;
+    }
+    .project6{
+        background-color: bisque;
+      grid-column : span 2;
+    }
+    .project4{
+      grid-column : span 2;
+      background-color: bisque;
+    }
+    .project5{
+    grid-column : span 2;
+    background-color: bisque ;
+    }
+    .project3{
+        grid-column : span 2;
+        background-color: bisque ;
+    }
+    img{
+      max-width: 100%;
+    height: 300px;
+    display:flex;
+    justify-content:center;
+    }
+
     </style>
 </head>
 <body>
-    
+    <div class="head">
+        <h1><center>CSS PORTFOLIO</center></h1>
+      </div>
+      <div class="container">
+       <div class=" item project1">
+        <h2><center><a href="./public/motivn mem/solution1.html" target="_blank">MOTIVATION PROJECT MEME</a>
+          <img src="./img/motivation_img.png" alt=""></center> </h2>
+        </div>
+        <div class="item project2"><h2><center><a href="./public/flag.html" target="_blank">CSS FLAG PROJECT</a>
+          <img src="./img/flag_img.png" alt=""></center></h2></div>
+          <div class="item project6"><h2><center><a href="./public/Chessboard.html" target="_blank">Display Grid</a>
+            <img src="./img/chessboard_design.png" alt=""></center></h2></div>
+        <div class="item project4"><h2><center><a href="./public/pricing.html" target="_blank">FLEXBOX PRICING TABLE</a>
+          <img src="./img/pricing table_img.png" alt=""></center></h2></div>
+        <div class="item project5"><h2><center><a href="./public/mondrian.html" target="_blank">MODRIAN PROJECT</a>
+          <img src="./img/grid_project_img.png" alt=""></center></h2></div>
+          <div class="item project3"><h2><center><a href="./public/web_agency/web_age.html" target="_blank">WEB AGENCY PROJECT</a>
+        <img src="./img/web_age_img.png" alt=""></center></h2></div>
+         
+    </div>
+    <footer>
+      <h3><a href="./public/aboutme.html">ABOUT ME</a></h3>
+    <h3><a href="./public/contact me.html">CONTACT ME</a></h3>
+    </footer> 
 </body>
 </html>
